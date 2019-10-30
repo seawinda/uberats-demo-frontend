@@ -1,0 +1,41 @@
+.mainmenu {
+  list-style: none;
+  width: 490px;
+  justify-content: space-between;
+  margin-right: 70px;
+  flex: none;
+  padding: 0;
+}
+
+.mainmenu__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #fdfffc;
+  letter-spacing: 1px;
+}
+
+.mainmenu__item.marked::after,
+.mainmenu__item:hover::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  background-color: #fafbfd;
+  width: 4px;
+  height: 4px;
+}
+
+.mainmenu__link {
+  color: #fdfffc;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fdfffc;
+  }
+}

@@ -1,0 +1,43 @@
+.subscribe {
+    background-image: linear-gradient(to top, #e4e6f1, #e2ebf8);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+    @media screen and (min-width: $vtablet-width) {
+        padding-bottom: 70px;
+      }
+    @media screen and (min-width: $tablet-width) {
+        padding-bottom: 150px;
+      }
+}
+.subscribe__title {
+    margin-top: 0;
+    text-align: center;
+  @media screen and (min-width: $vtablet-width) {
+      margin-top: 40px;
+    }
+  @media screen and (min-width: $tablet-width) {
+      margin-top: 125px;
+      margin-bottom: 50px;
+    }
+}
+.subscribe__text {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 18px;
+  line-height: 26px;
+  
+  @media screen and (min-width: $vtablet-width) {
+    font-size: 24px;
+    line-height: 36px;    
+  }
+}
+.subscribe__form {
+    margin-top: 25px;
+    @media screen and (min-width: $vtablet-width) {
+      margin-top: 30px;
+    }
+    @media screen and (min-width: $tablet-width) {
+      margin-top: 55px;
+    }
+}

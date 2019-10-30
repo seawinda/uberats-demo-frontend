@@ -1,0 +1,36 @@
+.switcher {
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  bottom: 47px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #5489c3;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+.switcher__button {
+  padding: 6px 4px 7px;
+  margin: 0;
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  &:after {
+    content: "";
+    display: block;
+    background-color: #5489c3;
+    height: 1px;
+    width: 16px;
+  }
+  &.active {
+    cursor: default;
+    &:after {
+      background-color: #fafbfd;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+}

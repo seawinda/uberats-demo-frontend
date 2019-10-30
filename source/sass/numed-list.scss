@@ -1,0 +1,80 @@
+.numed-list {
+    position: relative;
+    
+    
+}
+
+.numed-list__title {
+    margin-top: 45px;
+    position: relative;
+    padding-left: 53px;  
+    font-size: 18px;
+    line-height: 26px;  
+    font-weight: 500;
+    max-width: 400px;
+    @media screen and (min-width: $tablet-width) {
+        margin-top: 90px;
+        margin-bottom: 20px;
+        padding-left: 110px;
+        font-size: 24px;
+        line-height: 36px;
+        
+    }
+    @media screen and (min-width: $desktop-width) {
+        padding-left: 60px;
+        max-width: 600px;
+    }
+}
+.numed-list__num {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 40px;
+    line-height: 58px;
+    color: #c5e8f8;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #c1e8f7;
+    z-index: -1;
+    background-color: #fafaff;
+
+    @media screen and (min-width: $tablet-width) {
+        left: 0px;
+        font-size: 60px;
+        line-height: 120px;
+        width: 123px;
+        height: 123px;
+        top: -30px;
+    }
+    @media screen and (min-width: $desktop-width) {
+        left: -53px;
+    }
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: -1px;
+        height: 60px;
+        width: 10px;
+        background-color: #fafaff;
+        @media screen and (min-width: $tablet-width) {
+            height: 123px;
+            width: 22px;
+        }
+    }
+    
+}
+.numed-list__text {
+    margin-left: 53px;
+    max-width: 400px;
+    @media screen and (min-width: $tablet-width) {
+        margin-left: 110px;
+        
+    }
+    @media screen and (min-width: $desktop-width) {
+        max-width: 600px;
+        margin-left: 60px;
+    }
+}

@@ -1,0 +1,10 @@
+.main {
+  background-image: url("../img/bg.png");
+  background-color: $bg;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 1920px;
+  @media screen and (min-width: $wide-width) {
+    background-size: cover;
+  }
+}

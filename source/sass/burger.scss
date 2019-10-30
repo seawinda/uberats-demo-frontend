@@ -1,0 +1,40 @@
+.burger {
+  width: 30px;
+  height: 21px;
+  position: relative;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+  flex: none;
+}
+.burger__line {
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 30px;
+  top: 9px;
+  left: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9px;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  &::after {
+    top: auto;
+    bottom: -9px;
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
